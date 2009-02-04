@@ -25,7 +25,7 @@ import string
 from time import time
 import weechat
 
-weechat.register("dont_highlight_me", "0.2", "", "")
+weechat.register("dont_highlight_me", "0.2", "", "prevents higlights spam from some users")
 
 # période du vacuum
 VACUUM_DELAY = 5
