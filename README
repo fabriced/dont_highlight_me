@@ -1,0 +1,27 @@
+                                    DONT_HIGHLIGHT_ME
+
+
+Description
+-----------
+
+dont_highlight_me is a weechat script allowing to prevent a user to highlight
+you every single line.
+
+Once loaded, it gives 3 commands :
+  /no_hl_add <host>
+  /no_hl_remove <host>
+  /no_hl_list
+They're meant to manage a list of hosts handled by the script to prevent being
+highlighted from there users on irc.
+
+How it works
+------------
+
+When someone loves to prefix his sentencs by your name as he talks to you and
+you don't like it run:
+  /no_hl_add <host_of_this_guy>
+
+This will filter what he says and only display the first highlight (and nick
+written). Highlights from this user will appear again if he stop for 30 seconds.
+30 is a default value, edit PREVENT_DELAY to modify it.
+
